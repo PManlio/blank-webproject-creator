@@ -1,4 +1,6 @@
-import os
+#!/usr/bin/env python3
+import os, sys
+
 def projectfolder(dirname):
     try:
         os.mkdir(dirname)
@@ -35,7 +37,11 @@ def files(dirname):
     open(os.path.join(jsdir, 'main.js'), 'w')
 
 def main():
-    dirname = input()
-    projectfolder(dirname)
+    if len(sys.argv) > 2:
+        print("Argument must be only one (it should be your project name).")
+        exit()
+    arg = sys.argv[1]
+    # dirname = arg
+    projectfolder(arg)
 
 main()
