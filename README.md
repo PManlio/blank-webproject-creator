@@ -12,3 +12,9 @@ So I'm creating this script to do all of these things by only writing project's 
 
 
 Other informations soon.
+
+
+UPDATE:
+
+
+Now you can put blank.py directly in your /bin folder (Unix only) and write your project name side by side to the script name
