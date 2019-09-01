@@ -24,20 +24,8 @@ def subfolder(dirname):
 
 def files(dirname):
     open(os.path.join(dirname, 'index.html'), 'w')
-    html = open(dirname+'/home.html', 'w+')
-    htmltext='<!DOCTYPE html>\n
-    <html lang="en">\n
-    <head>\n\t
-    <meta charset="UTF-8">\n\t
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n\t
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n\t
-    <link href="./css/mycss.css" rel="stylesheet" type="text/css">\n\t
-    <title>Document</title>\n
-    </head>\n
-    <body>\n\n
-    <script src="./js/main.js"></script>\n\t
-    </body>\n
-    </html>'
+    html = open(dirname+'/index.html', 'w+')
+    htmltext='<!DOCTYPE html>\n<html lang="en">\n<head>\n\t<meta charset="UTF-8">\n\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n\t<meta http-equiv="X-UA-Compatible" content="ie=edge">\n\t<link href="./css/mycss.css" rel="stylesheet" type="text/css">\n\t<title>Document</title>\n</head>\n<body>\n\n<script src="./js/main.js"></script>\n\t</body>\n</html>'
     html.write(htmltext)
 
     cssdir = dirname + "/css"
