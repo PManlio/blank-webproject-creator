@@ -17,4 +17,8 @@ Other informations soon.
 UPDATE:
 
 
-Now you can put blank.py directly in your /bin folder (Unix only) and write your project name side by side to the script name
+Now you can put blank.py directly in your /bin folder (Unix only) and write your project name side by side to the script name like this:
+
+```$ cd Desktop```
+
+```/Desktop$ blank.py projectname```
